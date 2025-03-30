@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>April 2025 Calendar with To-Do List</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    th, td { border: 1px solid #ddd; padding: 10px; text-align: center; }
+    th { background-color: #f2f2f2; }
+    label { display: block; margin-top: 10px; }
+    input, select, textarea, button { width: 100%; padding: 8px; margin-top: 5px; }
+    button { background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    button:hover { background-color: #45a049; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>April 2025 Calendar with To-Do List</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>April 2025</h2>
+      <table>
+        <caption>April 2025 Calendar</caption>
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td>
+          </tr>
+          <tr>
+            <td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td>
+          </tr>
+          <tr>
+            <td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td>
+          </tr>
+          <tr>
+            <td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td>
+          </tr>
+          <tr>
+            <td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td><td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Add To-Do Item</h2>
+      <form>
+        <label for="task">Task Description:</label>
+        <input type="text" id="task" name="task" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="priority">Priority Level:</label>
+        <select id="priority" name="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <fieldset>
+          <legend>Category:</legend>
+          <input type="radio" id="work" name="category" value="work" required>
+          <label for="work">Work</label>
+          <input type="radio" id="personal" name="category" value="personal">
+          <label for="personal">Personal</label>
+          <input type="radio" id="shopping" name="category" value="shopping">
+          <label for="shopping">Shopping</label>
+        </fieldset>
+
+        <label for="completed">
+          <input type="checkbox" id="completed" name="completed">
+          Mark as completed
+        </label>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Company Name</p>
+  </footer>
+
+</body>
+</html>
